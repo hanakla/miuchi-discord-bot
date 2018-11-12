@@ -1,3 +1,3 @@
 yarn install
 yarn build
-node ./dist/index.js
+pm2 startOrReload process.yml

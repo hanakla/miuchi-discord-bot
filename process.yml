@@ -1,0 +1,4 @@
+apps:
+    - name: miuchi-discord-bot
+      script: ./dist/index.js
+      instances: 1
