@@ -2,6 +2,9 @@ import fs from 'fs'
 import { join } from 'path'
 import Discord from 'discord.js'
 
+process.on('uncaughtException', e => { console.error(e.message) })
+process.on('unhandledRejection', e => { console.error(e) })
+
 const ASSET_DIR = join(__dirname, '../assets/')
 
 const config = JSON.parse(fs.readFileSync(join(__dirname, '../config.json')).toString())
