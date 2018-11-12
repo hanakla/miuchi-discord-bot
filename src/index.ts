@@ -16,7 +16,7 @@ client.on('message', async message => {
         if (!message.member.voiceChannel) return
 
         const connection = await message.member.voiceChannel.join()
-        const dispatcher = connection.playFile(join(ASSET_DIR, 'fuck.mp3'))
+        const dispatcher = connection.playFile(join(ASSET_DIR, 'fuck.webm'))
         dispatcher.setVolume(0.09)
         dispatcher.on('end', () => {
             dispatcher.end()
