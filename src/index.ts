@@ -15,7 +15,7 @@ client.login(config.token)
 client.on('message', async message => {
     if (message.author.bot) return
 
-    if (message.content === '!fuck') {
+    if (message.guild && message.content === '!fuck') {
         if (!message.member.voiceChannel) return
 
         const connection = await message.member.voiceChannel.join()
