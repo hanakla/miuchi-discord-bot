@@ -13,6 +13,8 @@ client.on('message', async message => {
     if (message.author.bot) return
 
     if (message.content === 'fuck') {
+        if (!message.member.voiceChannel) return
+
         const connection = await message.member.voiceChannel.join()
         const dispatcher = connection.playFile(join(ASSET_DIR, 'fuck.mp3'))
         dispatcher.setVolume(0.09)
