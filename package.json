@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node ./dist/index.js",
     "start-dev": "node --inspect-brk ./dist/index.js",
+    "build": "tsc",
     "watch": "tsc --watch"
   },
   "devDependencies": {
