@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "target": "es5",
+        "lib": [
+            "es2015",
+            "es2016"
+        ],
+        "baseUrl": "./src"
+    },
+    "files": [
+        "src/index.ts"
+    ]
+}

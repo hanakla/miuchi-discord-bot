@@ -1,0 +1,20 @@
+{
+  "name": "miuchi-discord-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ragg <ragg.devpr@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "start-dev": "node --inspect-brk ./dist/index.js",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/node": "10.12.5",
+    "typescript": "3.1.6"
+  },
+  "dependencies": {
+    "discord.js": "11.4.2",
+    "opusscript": "0.0.6"
+  }
+}
