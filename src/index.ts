@@ -19,7 +19,12 @@ client.on('message', async message => {
         if (!message.member.voiceChannel) return
 
         const connection = await message.member.voiceChannel.join()
-        const file = Math.random() < 0.2 ? join(ASSET_DIR, 'ai-fuck.webm') : join(ASSET_DIR, 'fuck.webm')
+        const random = Math.random()
+
+        const file =
+            random < 0.2 ? join(ASSET_DIR, 'ai-fuck.webm') :
+            random < 0.3 ? join(ASSET_DIR, 'fumima.webm') :
+            join(ASSET_DIR, 'fuck.webm')
         const dispatcher = connection.playFile(file)
         dispatcher.setVolume(0.09)
         dispatcher.on('end', () => {
