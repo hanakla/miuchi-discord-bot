@@ -9,7 +9,7 @@ const ASSET_DIR = join(__dirname, '../assets/')
 
 const config = JSON.parse(fs.readFileSync(join(__dirname, '../config.json')).toString())
 
-(async () => {
+;(async () => {
     while (true) {
         const client = new Discord.Client()
         client.login(config.token)
